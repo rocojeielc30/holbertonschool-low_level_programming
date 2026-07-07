@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-/** 
+/**
 * entry - Main
 * Return: Always success
-*/ 
+*/
 
 int main(void)
 {
