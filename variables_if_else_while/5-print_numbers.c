@@ -19,7 +19,7 @@ int main(void)
 		x++;
 	}
 
-	printf('\n');
+	printf("\n");
 
 	return (0);
 }
