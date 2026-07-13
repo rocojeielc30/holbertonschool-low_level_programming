@@ -24,7 +24,17 @@ int main (void)
 
 	if (choice == 1)
 	{
-		printf("You have chosen to add");
+		printf("You have chosen to add!\n");
+		int a;
+		int b; 
+		int sum;
+
+		printf("Please enter value 1: \n");
+		scanf("%d", &a);
+		printf("Please enter value 2: \n");
+		scanf("%d", &b);
+		printf("%d + %d equals to %d", a, b, sum);
+
 	}
 	else if (choice == 2)
 	{
