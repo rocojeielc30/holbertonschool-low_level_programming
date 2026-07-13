@@ -42,7 +42,21 @@ int main (void)
 	}
 	else if (choice == 2)
 	{
-		printf("You have chosen to subtract");
+		int a;
+		int b;
+		int sum;
+
+		printf("You have chosen to add!\n");
+
+		printf("Please enter value 1: ");
+		scanf("%d", &a);
+
+		printf("Please enter value 2: ");
+		scanf("%d", &b);
+
+		sum = a - b;
+		printf("%d + %d equals %d.\n", a, b, sum);
+
 	}
 	else if (choice == 3)
 	{
