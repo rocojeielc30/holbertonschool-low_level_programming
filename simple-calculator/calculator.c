@@ -46,7 +46,7 @@ int main (void)
 		int b;
 		int sum;
 
-		printf("You have chosen to add!\n");
+		printf("You have chosen to subtract!\n");
 
 		printf("Please enter value 1: ");
 		scanf("%d", &a);
@@ -55,7 +55,7 @@ int main (void)
 		scanf("%d", &b);
 
 		sum = a - b;
-		printf("%d + %d equals %d.\n", a, b, sum);
+		printf("%d - %d equals %d.\n", a, b, sum);
 
 	}
 	else if (choice == 3)
