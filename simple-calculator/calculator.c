@@ -38,7 +38,6 @@ int main (void)
 
 		sum = a + b;
 		printf("%d + %d equals %d.\n", a, b, sum);
-
 	}
 	else if (choice == 2)
 	{
@@ -56,11 +55,23 @@ int main (void)
 
 		sum = a - b;
 		printf("%d - %d equals %d.\n", a, b, sum);
-
 	}
 	else if (choice == 3)
 	{
+		int a;
+		int b;
+		int sum;
+
 		printf("You have chosen to multiply");
+
+		printf("Please enter value 1: ");
+		scanf("%d", &a);
+
+		printf("Please enter value 2: ");
+		scanf("%d", &b);
+
+		sum = a * b;
+		printf("%d times %d equals %d.\n", a, b, sum);
 	}
 	else if (choice == 4)
 	{
