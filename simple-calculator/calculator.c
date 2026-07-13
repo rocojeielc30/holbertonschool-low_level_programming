@@ -75,7 +75,25 @@ int main (void)
 	}
 	else if (choice == 4)
 	{
-		printf("You have chosen to Divide");
+		int a;
+		int b;
+		int sum;
+
+		printf("You have chosen to Divide\n");
+
+		printf("Please enter value 1: ");
+		scanf("%d", &a);
+		printf("Please enter value 2: ");
+		scanf("%d", &b);
+		sum = a / b;
+
+		if (b == 0){
+			printf("Error: division by zero");
+		}
+		else {
+			printf("%d divided by %d is %d", a, b, sum);
+		}
+
 	}
 	else {
 		printf("Bye");
