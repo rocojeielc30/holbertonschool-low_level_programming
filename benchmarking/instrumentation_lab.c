@@ -21,11 +21,12 @@ static unsigned int next_value(unsigned int *state)
 
 static void build_dataset(void)
 {
-    start = clock();
+   
     unsigned int state;
     int i;
 
     state = SEED_VALUE;
+    start = clock();
 
     for (i = 0; i < DATASET_SIZE; i++)
         dataset[i] = (int)(next_value(&state) % 100000);
