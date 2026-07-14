@@ -5,13 +5,9 @@
 #define SEED_VALUE 42u
 
 static int dataset[DATASET_SIZE];
-
-clock_t start;
-clock_t end;
-double build_time;
 double process_time;
+double build_time;
 double reduce_time;
-double total_time;
 
 static unsigned int next_value(unsigned int *state)
 {   
@@ -24,15 +20,17 @@ static void build_dataset(void)
    
     unsigned int state;
     int i;
+    clock_t build_start;
+    clock_t build_end;
 
     state = SEED_VALUE;
-    start = clock();
+    build_start = clock();
 
     for (i = 0; i < DATASET_SIZE; i++)
         dataset[i] = (int)(next_value(&state) % 100000);
 
-    end = clock();
-    build_time = (double)(end-start) / CLOCKS_PER_SEC;
+    build_end = clock();
+    build_time = (double)(build_end-build_start) / CLOCKS_PER_SEC;
     
 }
 
@@ -40,8 +38,10 @@ static void process_dataset(void)
 {
     int i;
     int v;
+    clock_t process_start;
+    clock_t process_end;
 
-    start = clock();
+    process_start = clock();
     for (i = 0; i < DATASET_SIZE; i++)
     {
         v = dataset[i];
@@ -50,22 +50,24 @@ static void process_dataset(void)
             v = -v;
         dataset[i] = v;
     }
-    end = clock();
-    process_time = (double)(end-start) / CLOCKS_PER_SEC;
+    process_end = clock();
+    process_time = (double)(process_end-process_start) / CLOCKS_PER_SEC;
 }
 
 static unsigned long reduce_checksum(void)
 {
     unsigned long sum;
     int i;
+    clock_t reduce_start;
+    clock_t reduce_end;
 
-    start = clock();
+    reduce_start = clock();
     sum = 0;
     for (i = 0; i < DATASET_SIZE; i++)
         sum = (sum * 131ul) + (unsigned long)dataset[i];
 
-    end = clock();
-    reduce_time = (double)(end-start) / CLOCKS_PER_SEC;
+    reduce_end = clock();
+    reduce_time = (double)(reduce_end-reduce_start) / CLOCKS_PER_SEC;
     return sum;
     
 }
@@ -73,6 +75,9 @@ static unsigned long reduce_checksum(void)
 int main(void)
 {
     unsigned long checksum;
+    clock_t start;
+    clock_t end;
+    double total_time;
    
     /* Students must add clock-based timing and print required lines. */
 
