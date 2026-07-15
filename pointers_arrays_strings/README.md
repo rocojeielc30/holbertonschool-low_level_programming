@@ -11,3 +11,6 @@ Create a function that returns the length of a string.
 
 ## Task. 3:
 Create a function that prints a string followed by a new line to stdout. 
+
+## Task. 4:
+Create a function that prings a string in reverse followed by a new line.
