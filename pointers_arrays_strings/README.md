@@ -6,5 +6,8 @@ Create a function that takes a pointer to an int as parameter and updates the va
 ## Task. 1: 
 Create a function that swaps the value of two integers.
 
-## Task. 1: 
+## Task. 2: 
 Create a function that returns the length of a string.
+
+## Task. 3:
+Create a function that prints a string followed by a new line to stdout. 
