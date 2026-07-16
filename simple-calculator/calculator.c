@@ -1,15 +1,10 @@
 #include <stdio.h>
 
 /**
- * add- adds two integers together
- * subtract- takes an integer away from another
- * multiply- takes an integer and multiplies it with another
- * divide- takes an integer and divides it by another
- * Main- calculator functions and options
+ * add - Adds two integers entered by the user
  *
- * Return: always 0 - success
+ * Return: Nothing
  */
-
 void add(void)
 {
 	int a;
@@ -25,6 +20,11 @@ void add(void)
 
 }
 
+/**
+ * subtract - Subtracts the second integer from the first
+ *
+ * Return: Nothing
+ */
 void subtract(void)
 {
 	int a;
@@ -40,6 +40,11 @@ void subtract(void)
 
 }
 
+/**
+ * multiply - Multiplies two integers entered by the user
+ *
+ * Return: Nothing
+ */
 void multiply(void)
 {
 	int a;
@@ -55,6 +60,11 @@ void multiply(void)
 
 }
 
+/**
+ * divide - Divides the first integer by the second
+ *
+ * Return: Nothing
+ */
 void divide(void)
 {
 	int a;
@@ -65,20 +75,26 @@ void divide(void)
 	scanf("%d", &a);
 	printf("Enter value 2: \n");
 	scanf("%d", &b);
-	sum = a / b;
+
 	if (b == 0)
 	{
-		printf("Error: division by zero");
+		printf("Error: division by zero\n");
 	}
 	else
 	{
-		printf("%d divided by %d is %d", a, b, sum);
+		sum = a / b;
+		printf("%d divided by %d is %d\n", a, b, sum);
 	}
 
 
 
 }
 
+/**
+ * main - Displays the calculator menu and performs the selected operation
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int choice;
@@ -104,17 +120,21 @@ int main(void)
 	{
 		add();
 	}
-	if (choice == 2)
+	else if (choice == 2)
 	{
 		subtract();
 	}
-	if (choice == 3)
+	else if (choice == 3)
 	{
 		multiply();
 	}
-	if (choice == 4)
+	else if (choice == 4)
 	{
 		divide();
+	}
+	else
+	{
+		printf("Goodbye!\n");
 	}
 	return (0);
 }
