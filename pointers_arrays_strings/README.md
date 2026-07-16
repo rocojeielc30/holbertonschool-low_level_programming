@@ -15,5 +15,8 @@ Create a function that prints a string followed by a new line to stdout.
 ## Task. 4:
 Create a function that prings a string in reverse followed by a new line.
 
-## Task 5: 
+## Task. 5: 
 Create a function that reverses a string. 
+
+## Task. 6: 
+Create a function that prints every other character of a string, starting with the first character followed by a new line. 
