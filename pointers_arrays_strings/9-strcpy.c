@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * *_strcpy - prints n integers in an array that is n big
@@ -10,7 +11,6 @@
 char *_strcpy(char *dest, char *src)
 {
 	int n;
-	char last;
 
 	n = 0;
 	while (src[n] != '\0')
