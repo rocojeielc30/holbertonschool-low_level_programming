@@ -7,3 +7,11 @@ Function 2:
 A unction that returns a pointer to a newly allocated space in memory, which contains a copy of the string given as a parameter.
 
 Function 3: 
+Write a function that concatenates two strings.
+
+Function 4: 
+Write a function that returns a pointer to a 2 dimensional array of integers.
+
+Function 5: 
+Write a function that returns a pointer to a 2 dimensional array of integers.
+
