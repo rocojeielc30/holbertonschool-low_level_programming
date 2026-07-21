@@ -3,7 +3,7 @@
 
 /**
  * free_grid- Write a function that frees a grid of its elements.
- * @**grid: pointer to a pointer to a grid 
+ * @grid: pointer to a pointer to a grid
  * @height: height - how big the array is
  *
  * Return: pointer to the created array, or NULL if size is 0 or malloc fails
