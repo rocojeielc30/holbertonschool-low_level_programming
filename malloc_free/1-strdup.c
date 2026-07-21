@@ -2,12 +2,14 @@
 #include "main.h"
 
 /**
- * _strdup- function that returns a pointer to a newly allocated space in memory
+ * _strdup- function that returns a pointer to a
+ * newly allocated space in memory
  * @str: the original string to be duped
  *
  * Return: pointer to the created array, or NULL if size is 0 or malloc fails
  */
-char *_strdup(char *str) {
+char *_strdup(char *str)
+{
 
 	int i;
 	int length;
@@ -19,7 +21,7 @@ char *_strdup(char *str) {
 	{
 		return (NULL);
 	}
-	
+
 	while (str[length] != '\0')
 	{
 		length++;
