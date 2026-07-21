@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * str_concat - Write a function that concatenates two strings.
- * @s1: string 1 to copy
- * @s2: string 2 to copy
+ * **alloc_grid - Write a function that concatenates two strings.
+ * @width: width of grid
+ * @height: height of grid
  *
  * Return: pointer to the created array, or NULL if size is 0 or malloc fails
  */
@@ -36,7 +36,7 @@ int **alloc_grid(int width, int height)
 				i--;
 				free(grid[i]);
 			}
-			free (grid);
+			free(grid);
 			return (NULL);
 		}
 	}
