@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include "function_pointers.h"
+#include <stddef.h>
+
 
 /**
  * int_index - searches for an integer
