@@ -8,7 +8,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	unsigned int i;
 	unsigned int x;
-	int sum;
+	unsigned int sum;
 
 	i = 0;
 	sum = 0;
