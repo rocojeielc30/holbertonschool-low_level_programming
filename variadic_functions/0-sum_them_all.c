@@ -20,7 +20,7 @@ int sum_them_all(const unsigned int n, ...)
 	i = 0;
 	sum = 0;
 
-	if (n = 0)
+	if (n == 0)
 	{
 		return (sum);
 	}
