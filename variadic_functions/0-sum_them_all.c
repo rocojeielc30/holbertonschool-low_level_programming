@@ -6,8 +6,8 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_start(args, n);
 
-	int i;
-	int x;
+	unsigned int i;
+	unsigned int x;
 	int sum;
 
 	i = 0;
