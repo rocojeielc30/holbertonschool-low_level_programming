@@ -21,30 +21,52 @@ void print_all(const char * const format, ...)
 	double double_to_print;
 	char *string_to_print;
 	int i;
+	int printed;
+	int valid;
 
 	va_start(args, format);
+
 	i = 0;
+	printed = 0;
 
 	while (format[i] != '\0')
 	{
+		valid = 0;
+
+		switch (format[i])
+		{
+			case 'c':
+			case 'i':
+			case 'f':
+			case 's':
+				valid = 1;
+				break;
+		}
+
+		if (valid && printed)
+			printf(", ");
+
 		switch (format[i])
 		{
 			case 'c':
 			{
 				char_to_print = va_arg(args, int);
 				printf("%c", char_to_print);
+				printed = 1;
 				break;
 			}
 			case 'i':
 			{
 				int_to_print = va_arg(args, int);
 				printf("%d", int_to_print);
+				printed = 1;
 				break;
 			}
 			case 'f':
 			{
 				double_to_print = va_arg(args, double);
 				printf("%f", double_to_print);
+				printed = 1;
 				break;
 			}
 			case 's':
@@ -52,19 +74,18 @@ void print_all(const char * const format, ...)
 				string_to_print = va_arg(args, char *);
 
 				if (string_to_print == NULL)
-				{
-					printf("(nil)");
+					string_to_print = "(nil)";
 
-				}
-				if (string_to_print != NULL)
-				{
-					printf("%s", string_to_print);
-				}
+				printf("%s", string_to_print);
+				printed = 1;
 				break;
 			}
 		}
+
 		i++;
 	}
+
 	va_end(args);
+
 	printf("\n");
 }
