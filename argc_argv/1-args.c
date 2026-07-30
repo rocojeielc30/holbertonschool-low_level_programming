@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - Prints the number of arguments that is input by the user 
+ * main - Prints the number of arguments that is input by the user
  * @argc: Number of command-line arguments.
  * @argv: Array of command-line argument strings.
  *
