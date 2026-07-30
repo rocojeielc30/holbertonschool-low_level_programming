@@ -10,10 +10,9 @@
  */
 int main(int argc, char *argv[])
 {
-	int sum; 
+	int *sum; 
 	int i;
 
-	sum = 1;
 	if (argc > 1)
 	{
 		printf("Error\n");
@@ -23,7 +22,7 @@ int main(int argc, char *argv[])
 	i = 1;
 	while (argv[i] < argc)
 	{
-		sum = sum * atoi(argv[i]);
+		sum = 1 * atoi(argv[i]);
 		i++;
 	}
 
