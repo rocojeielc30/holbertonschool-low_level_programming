@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
 	}
 
 	printf("%s", name);
+	printf("\n");
 
 	return (0);
 
