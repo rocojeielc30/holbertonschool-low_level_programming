@@ -13,10 +13,11 @@ int main(int argc, char *argv[])
 	int i;
 	int j;
 	int sum;
-	
+
 	if (argc == 1)
 	{
 		printf("0\n");
+		return (0);
 	}
 
 	i = 1;
