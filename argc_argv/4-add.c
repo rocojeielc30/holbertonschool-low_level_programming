@@ -13,8 +13,7 @@ int main(int argc, char *argv[])
 	int i;
 	int j;
 	int sum;
-	int current_number;
-
+	
 	if (argc == 1)
 	{
 		printf("0\n");
