@@ -17,5 +17,5 @@ void op_div(int a, int b)
 }
 void op_mod(int a, int b)
 {
-	return (ab);
+	return (a % b);
 }

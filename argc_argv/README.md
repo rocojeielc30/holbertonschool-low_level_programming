@@ -8,3 +8,7 @@ Prints the number of arguments that is input by the user
 
 Function 3:
 Write a program that prints all arguments it receives.
+
+Function 4: 
+Write a program that adds positive numbers.
+
