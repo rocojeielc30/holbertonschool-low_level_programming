@@ -14,7 +14,6 @@ Write a function that adds a new node at the end of a list_t list.
 
 Function 5:
 
-
-Function 6: 
+ 
 
 
