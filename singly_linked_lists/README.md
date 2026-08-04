@@ -7,10 +7,10 @@ Function 2:
 A function that prints the number of elemts of a list_t list.
 
 Function 3: 
-Write a function that adds a new node at teh beginning of a list_t list.
+Write a function that adds a new node at the beginning of a list_t list.
 
 Function 4: 
-
+Write a function that adds a new node at the end of a list_t list.
 
 Function 5:
 
