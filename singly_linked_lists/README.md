@@ -2,3 +2,19 @@
 
 Function 1:
 A function that prints all the elements of a list_t list. 
+
+Function 2: 
+A function that prints the number of elemts of a list_t list.
+
+Function 3: 
+Write a function that adds a new node at teh beginning of a list_t list.
+
+Function 4: 
+
+
+Function 5:
+
+
+Function 6: 
+
+
