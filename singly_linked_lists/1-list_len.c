@@ -10,7 +10,6 @@ size_t list_len(const list_t *h)
 {
 	const list_t *current;
 	size_t i;
-	char *message; 
 
 	current = h;
 	i = 0;
@@ -21,7 +20,5 @@ size_t list_len(const list_t *h)
 		current = current->next;
 	}
 
-	printf("%u elements\n", i);
-
-	return (0);
+	return (i);
 }
